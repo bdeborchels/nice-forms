@@ -5,40 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
-<form>
-    <fieldset>
-      <legend>Personal Information:</legend>
-      <div>
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+  <div class="container">
+    <div class="overlay" id="overlay">
+      <div class="sign-in" id="sign-in">
+        <div class="odin-logo-container">
+          <img class="odin-logo" src="images/odin-lined.png">
+          <p>ODIN</p>
+        </div>
       </div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div>
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-      </div>
-      <div>
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Address:</legend>
-      <div>
-        <label for="address">Address:</label>
-        <textarea id="address" name="address" required></textarea>
-      </div>
-    </fieldset>
-    <div>
-      <input type="submit" value="Submit">
     </div>
-  </form>
+    <div class="form">
+      <div class="sign-up" id="sign-up-info">
+        <div class="text-initial">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+          Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want it!</p>
+      </div>
+        <form id="sign-up-form">
+          <p class="form-text">Let's do this!</p>
+          <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name"/>
+            <label for="email">Email</label>
+            <input type="email" id="email"/>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"/>
+          </div>
+          <div class="input-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name"/>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone"/>
+            <label for="password">Confirm Password</label>
+            <input type="password" id="password" name="confirm-password"/>
+          </div>
+          <button class="control-button">Create Account</button>
+        </form>
+          <p class="log-in">Already have an account? <a href="#">Log In</a></p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
